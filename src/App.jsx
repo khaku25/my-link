@@ -41,15 +41,15 @@ function App() {
                 rel="noopener noreferrer"
                 className="group block w-full transition-all duration-300 active:scale-[0.98]"
               >
-                <Card className="flex items-center p-4 bg-white hover:bg-slate-50 border-slate-200/50 shadow-sm hover:shadow-md transition-all duration-300">
-                  <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-xl bg-slate-50 group-hover:bg-white transition-colors">
+                <Card className="relative flex items-center p-4 bg-white hover:bg-slate-50 border-slate-200/50 shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="absolute left-4 top-1/2 -translate-y-1/2 flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-xl bg-slate-50 group-hover:bg-white transition-colors">
                     <img
                       src={faviconUrl}
                       alt=""
                       className="w-5 h-5 object-contain"
                     />
                   </div>
-                  <div className="flex-grow text-center pr-10">
+                  <div className="w-full text-center">
                     <span className="text-[15px] font-bold text-slate-700">
                       {link.title}
                     </span>
